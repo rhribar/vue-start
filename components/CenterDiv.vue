@@ -10,15 +10,5 @@ export default {};
 </script>
 
 <style scoped>
-.wr {
-	height: 100vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-.main {
-	width: 200px;
-	height: 200px;
-	background-color: red;
-}
+
 </style>
