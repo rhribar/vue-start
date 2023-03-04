@@ -12,6 +12,10 @@
 			<pre>{{ filtered_data }}</pre>
 
 		</div> -->
+
+		<div v-for="item in items" :key="item.id">
+			<input v-model="item.value"/>
+		</div>
 	</div>
 </template>
 

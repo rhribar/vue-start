@@ -1,7 +1,8 @@
 <template>
-	<div>
-		<p>// centriraj div na sredino ekrana</p>
-		<p>// naj bo širine 200px 200px ter ter rdeče barve</p>
+	<div class="center">
+		<div class="center-child">
+			10
+		</div>
 	</div>
 </template>
 
@@ -11,4 +12,16 @@ export default {};
 
 <style scoped>
 
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.centerChild {
+	height: 200px;
+	width: 200px;
+	background-color: red;
+}
 </style>

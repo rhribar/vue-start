@@ -37,13 +37,44 @@ const items = ref([
 		type: "dot",
 		value: 50,
 	},
+	{
+		id: 5,
+		type: "dot",
+		value: 50,
+	},
 ]);
 
 const filtered_data = computed(() => {
 	let data = items.value;
 
 	// do something
+	/* console.log(data[0]); */
 
+	/* let array = [];
+
+	data.map((item) => item.type === 'bar' && array.push(item));
+
+	console.log(array);
+	data = array; */
+
+	/* data.filter((el) => el.type === 'bar');
+	let data1 = data.filter((el) => el.type === 'bar'); */
+
+	let sum = 0;
+
+	/* data.map((item) => sum += item.value); */
+
+	/* let sum1 = data.map((item) => sum += item.value);
+
+	console.log(sum1[sum1.length - 1]);
+ */
+
+	/* const sum1 = data.reduce((prev, current) => prev + current.value, 0); */
+
+	data.some(el => el.type === 'circle');
+
+	console.log(data.some(el => el.type === 'circle'));
+	/* console.log(sum1); */
 	return data;
 });
 </script>
